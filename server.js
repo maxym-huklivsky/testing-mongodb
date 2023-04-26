@@ -3,6 +3,8 @@ const app = require('./app');
 
 const DB_HOST = 'mongodb+srv://Maxym:18102005jw@cluster0.tkrwhws.mongodb.net/test';
 
+mongoose.set('strictQuery', true);
+
 mongoose
   .connect(DB_HOST)
   .then(() => {
